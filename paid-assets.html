@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paid assets and pre-made products — Benji's Designs.">
+  <title>Paid Assets | Benji's Designs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-paid-assets">
+  <header class="site-header">
+    <p class="site-home-link">
+      <a href="index.html">&larr; Home</a>
+    </p>
+    <nav class="nav-main" aria-label="Main navigation">
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="price-list.html">Price List</a></li>
+        <li><a href="paid-assets.html" aria-current="page">Paid Assets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="paid-assets-main">
+    <div class="paid-assets-intro content-section content-section--wide">
+      <h1 class="page-title">Paid assets</h1>
+    
+      <p>Pre-made Products — Make a Ticket to Purchase Now!</p>
+		
+      <!-- <p class="paid-assets-intro__hint"><strong>New product:</strong> copy <code>&lt;!-- START PRODUCT --&gt;</code> through <code>&lt;!-- END PRODUCT --&gt;</code>. <strong>Extra preview on one product:</strong> copy <code>&lt;!-- START SLIDE --&gt;</code> through <code>&lt;!-- END SLIDE --&gt;</code> inside <code>.portfolio-carousel__track</code>.</p> -->
+   
+    </div>
+
+    <!--
+      START PRODUCT = full <article class="product-card">...</article>
+      Each product has a .portfolio-carousel (same structure as portfolio.html).
+      START SLIDE = one <div class="portfolio-slide"> with link + img. href on the link = image file for fullscreen.
+    -->
+
+    <div class="paid-assets-grid">
+
+      <!-- START PRODUCT -->
+      <article class="product-card">
+        <div class="portfolio-carousel product-card__carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Example asset pack — preview gallery">
+            <div class="portfolio-carousel__track">
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/paid-assets/asset-ar1-1.png" class="portfolio-slide__link">
+                  <img src="images/paid-assets/asset-ar1-1.png" alt="M4A1 Prism — 1 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/paid-assets/asset-ar1-2.png" class="portfolio-slide__link">
+                  <img src="images/paid-assets/asset-ar1-2.png" alt="M4A1 Prism — 2 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/paid-assets/asset-ar1-3.png" class="portfolio-slide__link">
+                  <img src="images/paid-assets/asset-ar1-3.png" alt="M4A1 Prism — 3 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/paid-assets/asset-ar1-4.png" class="portfolio-slide__link">
+                  <img src="images/paid-assets/asset-ar1-4.png" alt="M4A1 Prism — 4 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous preview">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next preview">&rsaquo;</button>
+          </div>
+			<!-- This line of code adds a hint above the project name
+          <p class="portfolio-carousel__hint">Swipe, drag, or use arrows</p>
+			-->
+		  </div>
+        <div class="product-card__body">
+          <h2 class="product-card__title">M4A1 Prism</h2>
+			<!--
+          <p class="product-card__desc">One or two sentences about what the buyer gets (file types, poly count, layers, etc.).</p>
+			-->
+          <p class="product-card__price">£40.00</p>
+          <div class="product-card__actions">
+            <a class="btn-primary" href="contact.html">Make a Ticket</a>
+          </div>
+        </div>
+      </article>
+      <!-- END PRODUCT -->
+
+      <!-- START PRODUCT -->
+      <article class="product-card">
+        <div class="portfolio-carousel product-card__carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Second product — preview gallery">
+            <div class="portfolio-carousel__track">
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdhk1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdhk2.png" alt="BD HK — image 1 of 3" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdhk3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdhk3.png" alt="BD HK — image 2 of 3" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdhk1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdhk1.png" alt="BD HK — image 3 of 3" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous preview">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next preview">&rsaquo;</button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <h2 class="product-card__title">BD HK</h2>
+			<!-- This line of code creates a product description
+          <p class="product-card__desc">Coming Soon</p><br>
+			-->
+          <p class="product-card__price">£40.00</p>
+          <div class="product-card__actions">
+            <a class="btn-primary" href="contact.html">Make a Ticket</a>
+          </div>
+        </div>
+      </article>
+      <!-- END PRODUCT -->
+
+      <!-- START PRODUCT -->
+      <article class="product-card">
+        <div class="portfolio-carousel product-card__carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Third product — preview gallery">
+            <div class="portfolio-carousel__track">
+              <!-- This block of code creates 'Coming Soon' slides
+              <div class="portfolio-slide">
+                <a href="images/comingsoon.png" class="portfolio-slide__link">
+                  <img src="images/comingsoon.png" alt="Preview: third product — 1 of 2" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdsig2.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdsig2.png" alt="BD SIG — image 1 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdsig3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdsig3.png" alt="BD SIG — image 2 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdsig1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdsig1.png" alt="BD SIG — image 3 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdsig4.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdsig4.png" alt="BD SIG — image 4 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous preview">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next preview">&rsaquo;</button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <h2 class="product-card__title">BD SIG</h2>
+
+          <p class="product-card__price">£35.00</p>
+          <div class="product-card__actions">
+            <a class="btn-primary" href="contact.html">Make a Ticket</a>
+          </div>
+        </div>
+      </article>
+      <!-- END PRODUCT -->
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Benji's Designs. All rights reserved.</p>
+	 <p>Website Created and Designed by <h1 class="neon-text">Benjis Designs</h1></p>
+  </footer>
+
+  <div id="paid-assets-lightbox" class="portfolio-lightbox" role="dialog" aria-modal="true" aria-label="Fullscreen preview" hidden>
+    <button type="button" class="portfolio-lightbox__backdrop" aria-label="Close preview"></button>
+    <div class="portfolio-lightbox__inner">
+      <button type="button" class="portfolio-lightbox__close" aria-label="Close">&times;</button>
+      <button type="button" class="portfolio-lightbox__nav portfolio-lightbox__nav--prev" aria-label="Previous image">&lsaquo;</button>
+      <button type="button" class="portfolio-lightbox__nav portfolio-lightbox__nav--next" aria-label="Next image">&rsaquo;</button>
+      <img class="portfolio-lightbox__img" src="1" alt="">
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      document.querySelectorAll("[data-carousel]").forEach(function (root) {
+        var viewport = root.querySelector(".portfolio-carousel__viewport");
+        var prev = root.querySelector(".carousel-btn--prev");
+        var next = root.querySelector(".carousel-btn--next");
+        if (!viewport || !prev || !next) return;
+
+        function updateButtons() {
+          var maxScroll = viewport.scrollWidth - viewport.clientWidth;
+          var left = viewport.scrollLeft;
+          prev.disabled = left <= 1;
+          next.disabled = left >= maxScroll - 1;
+        }
+
+        prev.addEventListener("click", function () {
+          viewport.scrollBy({ left: -viewport.clientWidth, behavior: "smooth" });
+        });
+        next.addEventListener("click", function () {
+          viewport.scrollBy({ left: viewport.clientWidth, behavior: "smooth" });
+        });
+        viewport.addEventListener("scroll", updateButtons);
+        window.addEventListener("resize", updateButtons);
+        if ("ResizeObserver" in window) {
+          new ResizeObserver(updateButtons).observe(viewport);
+        }
+        updateButtons();
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var lightbox = document.getElementById("paid-assets-lightbox");
+      var grid = document.querySelector(".paid-assets-grid");
+      if (!lightbox || !grid) return;
+
+      var backdrop = lightbox.querySelector(".portfolio-lightbox__backdrop");
+      var imgEl = lightbox.querySelector(".portfolio-lightbox__img");
+      var btnClose = lightbox.querySelector(".portfolio-lightbox__close");
+      var btnPrev = lightbox.querySelector(".portfolio-lightbox__nav--prev");
+      var btnNext = lightbox.querySelector(".portfolio-lightbox__nav--next");
+
+      var items = [];
+      var index = 0;
+      var lastFocus = null;
+
+      function collectCardItems(card) {
+        var out = [];
+        var track = card.querySelector(".portfolio-carousel__track");
+        if (track) {
+          track.querySelectorAll(".portfolio-slide__link").forEach(function (a) {
+            var im = a.querySelector("img");
+            var src = (im && im.getAttribute("src")) || a.getAttribute("href") || "";
+            var alt = (im && im.getAttribute("alt")) || "";
+            if (src) out.push({ src: src, alt: alt });
+          });
+        }
+        return out;
+      }
+
+      function updateView() {
+        if (!items.length) return;
+        var cur = items[index];
+        imgEl.src = cur.src;
+        imgEl.alt = cur.alt;
+        var multi = items.length > 1;
+        btnPrev.hidden = !multi;
+        btnNext.hidden = !multi;
+      }
+
+      function open() {
+        lightbox.hidden = false;
+        document.body.classList.add("portfolio-lightbox-open");
+        updateView();
+        btnClose.focus();
+      }
+
+      function close() {
+        lightbox.hidden = true;
+        imgEl.removeAttribute("src");
+        imgEl.alt = "";
+        document.body.classList.remove("portfolio-lightbox-open");
+        if (lastFocus && typeof lastFocus.focus === "function") {
+          lastFocus.focus();
+        }
+      }
+
+      function step(delta) {
+        if (items.length <= 1) return;
+        index = (index + delta + items.length) % items.length;
+        updateView();
+      }
+
+      grid.addEventListener("click", function (e) {
+        if (e.target.closest(".product-card__actions")) return;
+        if (e.target.closest(".carousel-btn")) return;
+        var card = e.target.closest(".product-card");
+        if (!card) return;
+
+        var link = e.target.closest(".portfolio-slide__link");
+        if (!link || !card.contains(link)) return;
+
+        e.preventDefault();
+        items = collectCardItems(card);
+        if (!items.length) return;
+        var track = card.querySelector(".portfolio-carousel__track");
+        var links = track ? track.querySelectorAll(".portfolio-slide__link") : [];
+        index = Array.prototype.indexOf.call(links, link);
+        if (index < 0) index = 0;
+        lastFocus = link;
+        open();
+      });
+
+      backdrop.addEventListener("click", close);
+      btnClose.addEventListener("click", close);
+      btnPrev.addEventListener("click", function () {
+        step(-1);
+      });
+      btnNext.addEventListener("click", function () {
+        step(1);
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (lightbox.hidden) return;
+        if (e.key === "Escape") {
+          e.preventDefault();
+          close();
+        } else if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          step(-1);
+        } else if (e.key === "ArrowRight") {
+          e.preventDefault();
+          step(1);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

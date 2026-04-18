@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Price list — Benji's Designs.">
+  <title>Price List | Benji's Designs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-price-list">
+  <header class="site-header">
+    <p class="site-home-link">
+      <a href="index.html">&larr; Home</a>
+    </p>
+    <nav class="nav-main" aria-label="Main navigation">
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="price-list.html" aria-current="page">Price List</a></li>
+        <li><a href="paid-assets.html">Paid Assets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="price-list-main">
+    <div class="price-list-intro content-section content-section--wide">
+      <h1 class="page-title">Price list</h1>
+      <!-- <p>Prices below are placeholders — replace them with your real products and amounts. All prices are shown as examples only.</p>
+      <p class="price-list-intro__note"><strong>How to edit:</strong> Change text inside the table cells. To add a <strong>new product row</strong>, copy from <code>&lt;!-- START ROW --&gt;</code> through <code>&lt;!-- END ROW --&gt;</code>. To add a whole <strong>new category</strong> (new table), copy from <code>&lt;!-- START CATEGORY --&gt;</code> through <code>&lt;!-- END CATEGORY --&gt;</code>.</p>-->
+    </div>
+
+    <!--
+      START CATEGORY = one section with its own heading + table.
+      START ROW = one line item (one <tr>...</tr>).
+    -->
+
+    <!-- START CATEGORY -->
+    <section class="price-section" aria-labelledby="price-cat-weapons-heading">
+      <div class="price-section__inner">
+        <h2 id="price-cat-weapons-heading" class="price-section__title">weapons</h2>
+		  <!--
+        <p class="price-section__intro">Short description of this product line (optional — delete this paragraph if you don’t need it).</p>
+-->
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+				  <!-- If you want to add more columnscopy and paste:
+                <th scope="col">Notes</th>
+-->
+              </tr>
+            </thead>
+            <tbody>
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Assault Rifle</th>
+                <td class="price-table__price">£35.00</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">SMG</th>
+                <td class="price-table__price">£30.00</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Shotgun</th>
+                <td class="price-table__price">£30.00</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Pistol</th>
+                <td class="price-table__price">£25.00</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Melee</th>
+                <td class="price-table__price">£20.00</td>
+              </tr>
+              <!-- END ROW -->				
+            </tbody>
+          </table>
+			
+    <!-- START CATEGORY (optional third block — duplicate or delete) -->
+    <section class="price-section" aria-labelledby="price-cat-other-heading">
+      <div class="price-section__inner">
+        <h2 id="price-cat-other-heading" class="price-section__title">Other / add-ons</h2>
+		  <!--
+        <p class="price-section__intro">Use extra sections for commissions, bundles, or rush fees.</p>
+-->
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Attatchments</th>
+                <td class="price-table__price">+£7.50</td>
+                <td class="price-table__notes">Scope, Laser ect...</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Custom Modelling</th>
+                <td class="price-table__price">+≥£10.00</td>
+                <td class="price-table__notes">Price Varies per Project</td>
+              </tr>
+              <!-- END ROW -->				
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- END CATEGORY -->
+				
+        </div>
+      </div>
+    </section>
+    <!-- END CATEGORY -->
+
+    <!-- START CATEGORY -->
+    <section class="price-section" aria-labelledby="price-cat-chains-heading">
+      <div class="price-section__inner">
+        <h2 id="price-cat-chains-heading" class="price-section__title">Chains</h2>
+		  <!--
+        <p class="price-section__intro">Another category — edit the title above and the rows below.</p>
+-->
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Single Chain</th>
+                <td class="price-table__price">£20.00</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Double Chain</th>
+                <td class="price-table__price">£25.00</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Triple Chain</th>
+                <td class="price-table__price">£30.00</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Custom Made Chain</th>
+                <td class="price-table__price">£40.00</td>
+              </tr>
+              <!-- END ROW -->
+				
+            </tbody>
+          </table>
+			
+    <!-- START CATEGORY (optional third block — duplicate or delete) -->
+    <section class="price-section" aria-labelledby="price-cat-other2-heading">
+      <div class="price-section__inner">
+        <h2 id="price-cat-othe2r-heading" class="price-section__title">Other / add-ons</h2>
+		  <!--
+        <p class="price-section__intro">Use extra sections for commissions, bundles, or rush fees.</p>
+-->
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Glow</th>
+                <td class="price-table__price">FREE</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Extra Pendant</th>
+                <td class="price-table__price">£5.00 each</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">Iced Out VVS</th>
+                <td class="price-table__price">£10.00</td>
+              </tr>
+              <!-- END ROW -->
+				
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- END CATEGORY -->
+			
+        </div>
+      </div>
+    </section>
+    <!-- END CATEGORY -->
+	  
+    <!-- START CATEGORY (optional third block — duplicate or delete) -->
+    <section class="price-section" aria-labelledby="price-cat-other-heading">
+      <div class="price-section__inner">
+        <h2 id="price-cat-combo-heading" class="price-section__title">Combo Deals</h2>
+		  <!--
+        <p class="price-section__intro">Use extra sections for commissions, bundles, or rush fees.</p>
+-->
+        <p>Please bare in mind, <strong>Weapon and Chain Add-On</strong> prices Apply.</p>
+
+		  <div class="price-table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">1x Custom AR + 1x Custom Chains (1 Pendant)</th>
+                <td class="price-table__price">£50</td>
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">1x Custom SMG/Shotgun + 1x Custom Chains (1 Pendant)</th>
+                <td class="price-table__price">£45</td>
+              </tr>
+              <!-- END ROW -->		
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">1x Custom Pistol + 1x Custom Chains (1 Pendant)</th>
+                <td class="price-table__price">£40</td>
+              </tr>
+              <!-- END ROW -->				
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">1x Custom Melee + 1x Custom Chains (1 Pendant)</th>
+                <td class="price-table__price">£35</td>
+               </tr>
+              <!-- END ROW -->				
+				
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- END CATEGORY -->
+  
+	  
+    <!-- START CATEGORY (optional third block — duplicate or delete) -->
+    <section class="price-section" aria-labelledby="price-cat-other-heading">
+      <div class="price-section__inner">
+        <h2 id="price-cat-server-heading" class="price-section__title">Server Bundles</h2>
+		  <!--
+        <p class="price-section__intro">Use extra sections for commissions, bundles, or rush fees.</p>
+-->
+        <p>Please bare in mind, <strong>Weapon and Chain Add-On</strong> prices Apply.</p>
+		  
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+               <!-- <th scope="col">Notes</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">3x Custom Chains (1 Pendant)</th>
+                <td class="price-table__price">£55</td>
+               <!-- <td class="price-table__notes">Scope, Laser ect...</td> -->
+              </tr>
+              <!-- END ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">5x Custom Chains (1 Pendant)</th>
+                <td class="price-table__price">£95</td>
+               <!-- <td class="price-table__notes">Price Varies per Project</td> -->
+              </tr>
+              <!-- END ROW -->		
+              <!-- START ROW -->
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">3x Custom AR's</th>
+                <td class="price-table__price">£95</td>
+               <!-- <td class="price-table__notes">Price Varies per Project</td> -->
+              </tr>
+              <!-- END ROW -->				
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">5x Custom AR's</th>
+                <td class="price-table__price">£150</td>
+               <!-- <td class="price-table__notes">Price Varies per Project</td> -->
+              </tr>
+              <!-- END ROW -->	
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">3x Custom SMG/Shotgun</th>
+                <td class="price-table__price">£85</td>
+               <!-- <td class="price-table__notes">Price Varies per Project</td> -->
+              </tr>
+              <!-- END ROW -->				
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">5x Custom SMG/Shotgun</th>
+                <td class="price-table__price">£135</td>
+               <!-- <td class="price-table__notes">Price Varies per Project</td> -->
+              </tr>
+              <!-- END ROW -->		
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">3x Custom Pistol</th>
+                <td class="price-table__price">£70</td>
+               <!-- <td class="price-table__notes">Price Varies per Project</td> -->
+              </tr>
+              <!-- END ROW -->				
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">5x Custom Pistol</th>
+                <td class="price-table__price">£115</td>
+               <!-- <td class="price-table__notes">Price Varies per Project</td> -->
+              </tr>
+              <!-- END ROW -->				
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">3x Custom Melee</th>
+                <td class="price-table__price">£55</td>
+               <!-- <td class="price-table__notes">Price Varies per Project</td> -->
+              </tr>
+              <!-- END ROW -->				
+              <!-- START ROW -->
+              <tr>
+                <th scope="row">5x Custom Melee</th>
+                <td class="price-table__price">£90</td>
+               <!-- <td class="price-table__notes">Price Varies per Project</td> -->
+              </tr>
+              <!-- END ROW -->								
+				
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- END CATEGORY -->
+	  
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Benji's Designs. All rights reserved.</p>
+	<p>Website Created and Designed by <h1 class="neon-text">Benjis Designs</h1></p>
+  </footer>
+</body>
+</html>

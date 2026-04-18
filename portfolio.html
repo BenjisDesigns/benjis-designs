@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio — Benji's Designs.">
+  <title>Portfolio | Benji's Designs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-portfolio">
+  <header class="site-header">
+    <p class="site-home-link">
+      <a href="index.html">&larr; Home</a>
+    </p>
+    <nav class="nav-main" aria-label="Main navigation">
+      <ul>
+        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+        <li><a href="price-list.html">Price List</a></li>
+        <li><a href="paid-assets.html">Paid Assets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="portfolio-main">
+    <div class="portfolio-intro content-section content-section--wide">
+      <h1 class="page-title">Portfolio</h1>
+		
+		<!-- Hidden text instead of deleting for easy edit if I want text there
+      <p>Choose <strong>Weapons</strong> or <strong>Chains</strong> below to jump to that gallery. Each card under a section is a <strong>showcase</strong> — put files in <code>images/portfolio</code>, add slides by copying a <code>&lt;div class="portfolio-slide"&gt;...&lt;/div&gt;</code> block, and scroll with arrows or swipe. <strong>Click any image</strong> for a fullscreen view; use the on-screen arrows or your keyboard (← →) to move between images in that showcase, <strong>Esc</strong> or the backdrop to close.</p>
+	-->
+    </div>
+
+
+    <nav id="portfolio-categories" class="portfolio-category-picker" aria-label="Portfolio categories">
+      <a class="portfolio-category-card" href="#weapons-portfolio">
+        <span class="portfolio-category-card__label">weapons</span>
+        <span class="portfolio-category-card__hint"></span>
+      </a>
+      <a class="portfolio-category-card" href="#chains-portfolio">
+        <span class="portfolio-category-card__label">Chains</span>
+        <span class="portfolio-category-card__hint"></span>
+      </a>
+    </nav>
+
+    <!--
+      HOW TO ADD A NEW SHOWCASE (whole project card):
+      1. Copy from "START SHOWCASE" through "END SHOWCASE".
+      2. Paste inside the correct <div class="portfolio-grid"> (weapons or Chains section).
+      3. Change aria-label on .portfolio-carousel__viewport to the project name.
+      4. Edit <figcaption> for the title under the card.
+
+      HOW TO ADD ANOTHER IMAGE TO THE SAME SHOWCASE:
+      1. Copy one full <div class="portfolio-slide">...</div> (including START/END SLIDE comments).
+      2. Paste it right after another slide, still inside .portfolio-carousel__track.
+      3. Set img src, link href (usually same as src), and alt text. The link opens fullscreen (not a new tab).
+    -->
+
+    <section id="weapons-portfolio" class="portfolio-category-section" aria-labelledby="weapons-portfolio-heading">
+      <header class="portfolio-category-section__head">
+        <h2 id="weapons-portfolio-heading" class="portfolio-category-section__title">weapons portfolio</h2>
+        <p class="portfolio-category-section__top"><a href="#portfolio-categories">↑ Back to categories</a></p>
+      </header>
+      <div class="portfolio-grid">
+
+      <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="weapons — project one — image gallery">
+            <div class="portfolio-carousel__track">
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/asset-ar1-1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/asset-ar1-1.png" alt="M4A1 Prism — image 1 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/asset-ar1-2.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/asset-ar1-2.png" alt="M4A1 Prism — image 2 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/asset-ar1-3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/asset-ar1-3.png" alt="M4A1 Prism — image 3 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/asset-ar1-4.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/asset-ar1-4.png" alt="M4A1 Prism — image 4 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+			
+			<!-- This line of code adds a hint above the project name
+          <p class="portfolio-carousel__hint">Swipe, drag, or use arrows</p>
+			-->
+        </div>
+        <figcaption class="portfolio-item__caption">M4A1 Prism</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+
+      <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="weapons — project two — image gallery">
+            <div class="portfolio-carousel__track">
+              <div class="portfolio-slide">
+                <a href="images/portfolio/s3lff-1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/s3lff-1.png" alt="S3LFF Tommy Gun — image 1 of 9" loading="lazy">
+                </a>
+              </div>
+              <div class="portfolio-slide">
+                <a href="images/portfolio/s3lff-2.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/s3lff-2.png" alt="S3LFF Tommy Gun — image 2 of 9" loading="lazy">
+                </a>
+              </div>
+              <div class="portfolio-slide">
+                <a href="images/portfolio/s3lff-3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/s3lff-3.png" alt="S3LFF Tommy Gun — image 3 of 9" loading="lazy">
+                </a>
+              </div>
+              <div class="portfolio-slide">
+                <a href="images/portfolio/s3lff-4.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/s3lff-4.png" alt="S3LFF Tommy Gun — image 4 of 9" loading="lazy">
+                </a>
+              </div>
+              <div class="portfolio-slide">
+                <a href="images/portfolio/s3lff-5.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/s3lff-5.png" alt="S3LFF Tommy Gun — image 5 of 9" loading="lazy">
+                </a>
+              </div>
+              <div class="portfolio-slide">
+                <a href="images/portfolio/s3lff-6.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/s3lff-6.png" alt="S3LFF Tommy Gun — image 6 of 9" loading="lazy">
+                </a>
+              </div>
+              <div class="portfolio-slide">
+                <a href="images/portfolio/s3lff-7.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/s3lff-7.png" alt="S3LFF Tommy Gun — image 7 of 9" loading="lazy">
+                </a>
+              </div>
+              <div class="portfolio-slide">
+                <a href="images/portfolio/s3lff-8.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/s3lff-8.png" alt="S3LFF Tommy Gun — image 8 of 9" loading="lazy">
+                </a>
+              </div>
+              <div class="portfolio-slide">
+                <a href="images/portfolio/s3lff-9.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/s3lff-9.png" alt="S3LFF Tommy Gun — image 9 of 9" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+        </div>
+        <figcaption class="portfolio-item__caption">S3LFF Tommy Gun</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+		  
+      <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="weapons — project one — image gallery">
+            <div class="portfolio-carousel__track">
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/benjim4a1-5.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/benjim4a1-5.png" alt="Benji M4A1 — image 1 of 5" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/benjim4a1-4.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/benjim4a1-4.png" alt="Benji M4A1 — image 2 of 5" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->				
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/benjim4a1-1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/benjim4a1-1.png" alt="Benji M4A1 — image 3 of 5" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/benjim4a1-2.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/benjim4a1-2.png" alt="Benji M4A1 — image 4 of 5" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/benjim4a1-3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/benjim4a1-3.png" alt="Benji M4A1 — image 5 of 5" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+        </div>
+        <figcaption class="portfolio-item__caption">Benji M4A1</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+		  
+      <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="weapons — project one — image gallery">
+            <div class="portfolio-carousel__track">
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdhk2.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdhk2.png" alt="BD HK — image 1 of 3" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdhk3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdhk3.png" alt="BD HK — image 2 of 3" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdhk1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdhk1.png" alt="BD HK — image 3 of 3" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+        </div>
+        <figcaption class="portfolio-item__caption">BD HK</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+		  
+	  <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="weapons — project one — image gallery">
+            <div class="portfolio-carousel__track">
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdsig2.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdsig2.png" alt="BD SIG — image 1 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdsig3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdsig3.png" alt="BD SIG — image 2 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdsig1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdsig1.png" alt="BD SIG — image 3 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/bdsig4.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/bdsig4.png" alt="BD SIG — image 4 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+        </div>
+        <figcaption class="portfolio-item__caption">BD SIG</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+
+      <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="weapons — project one — image gallery">
+            <div class="portfolio-carousel__track">
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/scouseval1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/scouseval1.png" alt="Scouse Val — image 1 of 3" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/scouseval3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/scouseval3.png" alt="Scouse Val — image 2 of 3" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/scouseval2.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/scouseval2.png" alt="Scouse Val — image 3 of 3" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+        </div>
+        <figcaption class="portfolio-item__caption">Scouse Val</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+
+	  <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="weapons — project one — image gallery">
+            <div class="portfolio-carousel__track">
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/pp1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/pp1.png" alt="Pinapple Punisher — image 1 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/pp2.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/pp2.png" alt="Pinapple Punisher — image 2 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/pp3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/pp3.png" alt="Pinapple Punisher — image 3 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/pp4.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/pp4.png" alt="Pinapple Punisher — image 4 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+        </div>
+        <figcaption class="portfolio-item__caption">Pinapple Punisher</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+		  
+	  <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="weapons — project one — image gallery">
+            <div class="portfolio-carousel__track">
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/beans1.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/beans1.png" alt="Beans Melee — image 1 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+              <!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/beans2.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/beans2.png" alt="Beans Melee — image 2 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/beans3.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/beans3.png" alt="Beans Melee — image 3 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+				<!-- START SLIDE -->
+              <div class="portfolio-slide">
+                <a href="images/portfolio/beans4.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/beans4.png" alt="Beans Melee — image 4 of 4" loading="lazy">
+                </a>
+              </div>
+              <!-- END SLIDE -->
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+        </div>
+        <figcaption class="portfolio-item__caption">Beans Melee</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+		  
+      </div>
+    </section>
+
+    <section id="chains-portfolio" class="portfolio-category-section" aria-labelledby="chains-portfolio-heading">
+      <header class="portfolio-category-section__head">
+        <h2 id="chains-portfolio-heading" class="portfolio-category-section__title">Chains portfolio</h2>
+        <p class="portfolio-category-section__top"><a href="#portfolio-categories">↑ Back to categories</a></p>
+      </header>
+      <div class="portfolio-grid">
+
+      <!-- START SHOWCASE (single image — arrows & hint hide automatically) -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Chains — project one — image gallery">
+            <div class="portfolio-carousel__track">
+              <div class="portfolio-slide">
+                <a href="images/portfolio/benji-chain.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/benji-chain.png" alt="Benji Chain" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+          <p class="portfolio-carousel__hint">Swipe, drag, or use arrows</p>
+        </div>
+        <figcaption class="portfolio-item__caption">Benji Chain</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+
+      <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Chains — project two — image gallery">
+            <div class="portfolio-carousel__track">
+              <div class="portfolio-slide">
+                <a href="images/portfolio/fletcher-chain.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/fletcher-chain.png" alt="Fletcher Chain" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+          <p class="portfolio-carousel__hint">Swipe, drag, or use arrows</p>
+        </div>
+        <figcaption class="portfolio-item__caption">Fletcher Chain</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+
+	  <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Chains — project two — image gallery">
+            <div class="portfolio-carousel__track">
+              <div class="portfolio-slide">
+                <a href="images/portfolio/matty-chain.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/matty-chain.png" alt="Fletcher Chain" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+          <p class="portfolio-carousel__hint">Swipe, drag, or use arrows</p>
+        </div>
+        <figcaption class="portfolio-item__caption">Matty Chain</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+
+      <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Chains — project two — image gallery">
+            <div class="portfolio-carousel__track">
+              <div class="portfolio-slide">
+                <a href="images/portfolio/schylar-chain.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/schylar-chain.png" alt="Fletcher Chain" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+          <p class="portfolio-carousel__hint">Swipe, drag, or use arrows</p>
+        </div>
+        <figcaption class="portfolio-item__caption">Schylar Chain</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+		  
+      <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Chains — project two — image gallery">
+            <div class="portfolio-carousel__track">
+              <div class="portfolio-slide">
+                <a href="images/portfolio/fletch-chain.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/fletch-chain.png" alt="Fletcher Chain" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+          <p class="portfolio-carousel__hint">Swipe, drag, or use arrows</p>
+        </div>
+        <figcaption class="portfolio-item__caption">Fletch Chain</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+      <!-- START SHOWCASE -->
+      <figure class="portfolio-item">
+        <div class="portfolio-carousel" data-carousel>
+          <div class="portfolio-carousel__viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Chains — project two — image gallery">
+            <div class="portfolio-carousel__track">
+              <div class="portfolio-slide">
+                <a href="images/portfolio/strikaaa-chain.png" class="portfolio-slide__link">
+                  <img src="images/portfolio/strikaaa-chain.png" alt="Fletcher Chain" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next image">&rsaquo;</button>
+          </div>
+          <p class="portfolio-carousel__hint">Swipe, drag, or use arrows</p>
+        </div>
+        <figcaption class="portfolio-item__caption">STRIKAAA Chain</figcaption>
+      </figure>
+      <!-- END SHOWCASE -->
+		  
+      </div>
+    </section>
+	  
+	<p>Find More Designs In Our Discord And See What We're Working On!</p>
+        <a class="btn-primary" href="https://discord.gg/thecoll" target="_blank" rel="noopener noreferrer">Join Discord</a>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Benji's Designs. All rights reserved.</p>
+	<p>Website Created and Designed by <h1 class="neon-text">Benjis Designs</h1></p>
+  </footer>
+
+  <div id="portfolio-lightbox" class="portfolio-lightbox" role="dialog" aria-modal="true" aria-label="Fullscreen image" hidden>
+    <button type="button" class="portfolio-lightbox__backdrop" aria-label="Close image"></button>
+    <div class="portfolio-lightbox__inner">
+      <button type="button" class="portfolio-lightbox__close" aria-label="Close">&times;</button>
+      <button type="button" class="portfolio-lightbox__nav portfolio-lightbox__nav--prev" aria-label="Previous image">&lsaquo;</button>
+      <button type="button" class="portfolio-lightbox__nav portfolio-lightbox__nav--next" aria-label="Next image">&rsaquo;</button>
+      <img class="portfolio-lightbox__img" src="1" alt="">
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      document.querySelectorAll("[data-carousel]").forEach(function (root) {
+        var viewport = root.querySelector(".portfolio-carousel__viewport");
+        var prev = root.querySelector(".carousel-btn--prev");
+        var next = root.querySelector(".carousel-btn--next");
+        if (!viewport || !prev || !next) return;
+
+        function updateButtons() {
+          var maxScroll = viewport.scrollWidth - viewport.clientWidth;
+          var left = viewport.scrollLeft;
+          prev.disabled = left <= 1;
+          next.disabled = left >= maxScroll - 1;
+        }
+
+        prev.addEventListener("click", function () {
+          viewport.scrollBy({ left: -viewport.clientWidth, behavior: "smooth" });
+        });
+        next.addEventListener("click", function () {
+          viewport.scrollBy({ left: viewport.clientWidth, behavior: "smooth" });
+        });
+        viewport.addEventListener("scroll", updateButtons);
+        window.addEventListener("resize", updateButtons);
+        if ("ResizeObserver" in window) {
+          new ResizeObserver(updateButtons).observe(viewport);
+        }
+        updateButtons();
+      });
+
+      var lightbox = document.getElementById("portfolio-lightbox");
+      if (!lightbox) return;
+      var backdrop = lightbox.querySelector(".portfolio-lightbox__backdrop");
+      var imgEl = lightbox.querySelector(".portfolio-lightbox__img");
+      var btnClose = lightbox.querySelector(".portfolio-lightbox__close");
+      var btnPrev = lightbox.querySelector(".portfolio-lightbox__nav--prev");
+      var btnNext = lightbox.querySelector(".portfolio-lightbox__nav--next");
+
+      var items = [];
+      var index = 0;
+      var lastFocus = null;
+
+      function collectItems(track) {
+        var out = [];
+        track.querySelectorAll(".portfolio-slide__link").forEach(function (a) {
+          var im = a.querySelector("img");
+          var src = a.getAttribute("href") || (im && im.getAttribute("src")) || "";
+          var alt = (im && im.getAttribute("alt")) || "";
+          if (src) out.push({ src: src, alt: alt });
+        });
+        return out;
+      }
+
+      function updateView() {
+        if (!items.length) return;
+        var cur = items[index];
+        imgEl.src = cur.src;
+        imgEl.alt = cur.alt;
+        var multi = items.length > 1;
+        btnPrev.hidden = !multi;
+        btnNext.hidden = !multi;
+      }
+
+      function open() {
+        lightbox.hidden = false;
+        document.body.classList.add("portfolio-lightbox-open");
+        updateView();
+        btnClose.focus();
+      }
+
+      function close() {
+        lightbox.hidden = true;
+        imgEl.removeAttribute("src");
+        imgEl.alt = "";
+        document.body.classList.remove("portfolio-lightbox-open");
+        if (lastFocus && typeof lastFocus.focus === "function") {
+          lastFocus.focus();
+        }
+      }
+
+      function step(delta) {
+        if (items.length <= 1) return;
+        index = (index + delta + items.length) % items.length;
+        updateView();
+      }
+
+      document.querySelectorAll(".portfolio-carousel__track").forEach(function (track) {
+        track.addEventListener("click", function (e) {
+          var link = e.target.closest(".portfolio-slide__link");
+          if (!link || !track.contains(link)) return;
+          e.preventDefault();
+          items = collectItems(track);
+          var slides = track.querySelectorAll(".portfolio-slide__link");
+          index = Array.prototype.indexOf.call(slides, link);
+          if (index < 0) index = 0;
+          lastFocus = link;
+          open();
+        });
+      });
+
+      backdrop.addEventListener("click", close);
+      btnClose.addEventListener("click", close);
+      btnPrev.addEventListener("click", function () {
+        step(-1);
+      });
+      btnNext.addEventListener("click", function () {
+        step(1);
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (lightbox.hidden) return;
+        if (e.key === "Escape") {
+          e.preventDefault();
+          close();
+        } else if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          step(-1);
+        } else if (e.key === "ArrowRight") {
+          e.preventDefault();
+          step(1);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
